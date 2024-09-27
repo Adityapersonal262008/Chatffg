@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  /* Chat page styling */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    background-color: #121212;
+  }
+  
+  /* Adjusting message list height */
+  #message-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Takes remaining space */
+    overflow-y: auto;
+    margin-bottom: 20px; /* Added margin to separate from input */
+    border-radius: 10px;
+    background-color: #1e1e1e;
+  }
+  
+  #message-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  /* Adjusted input container */
+  .input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20px; /* Move the input container slightly up */
+  }
+  
+  /* Adjusting message input */
+  .message-input {
+    padding: 15px;
+    flex: 1;
+    border: 2px solid #ff416c;
+    border-radius: 20px 0 0 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2e2e2e;
+  }
+  
+  /* Send button */
+  .send-button {
+    padding: 15px 30px;
+    background-color: #00f836;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: rgb(250, 8, 8);
+    font-size: large;
+    font-weight: 900;
+  }
+  
+  .send-button:hover {
+    background-color: #ff416c;
+    transform: scale(1.05);
+    color: rgb(250, 246, 8);
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Landing page styling */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.landing-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.input-field {
+  padding: 15px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.input-field:focus {
+  border-color: #ff4b2b;
+  outline: none;
+  background-color: #fefefe;
+  color: #121212;
+}
+
+.join-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #ff416c;
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat page styling */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  background-color: #121212;
+}
+
+#message-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 80vh;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+}
+
+#message-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.input-container {
+  display: flex;
+}
+
+.message-input {
+  padding: 15px;
+  flex: 1;
+  border: 2px solid #ff416c;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2e2e2e;
+}
+
+.send-button {
+  padding: 15px 30px;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.send-button:hover {
+  background-color: #ff416c;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
